@@ -1,0 +1,40 @@
+$hover-back-ground: rgb(245, 239, 239);
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  height: 56px;
+  align-items: center;
+  gap: 16px;
+  pointer-events: auto;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 56px;
+}
+
+.nav-wrapper {
+  width: 100%;
+  pointer-events: none;
+  white-space: nowrap;
+  margin: 0 20px 0 20px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: $hover-back-ground;
+}
+
+.nav-icon {
+  width: 48px;
+  height: 48px;
+}
