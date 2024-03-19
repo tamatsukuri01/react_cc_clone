@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import {
   getPokemonResponseApi,
   GetPokemonApiResponse,
-  PokemonData,
+  PokemonDatas,
 } from "@/moudules/getPokemonApi";
 import {
   useAppDispatch as useDispatch,
@@ -34,7 +34,7 @@ const PokemonData = (): JSX.Element => {
     shallowEqual
   );
 
-  const [pokemonData, setPokemonData] = useState<PokemonData[]>([]);
+  const [pokemonData, setPokemonData] = useState<PokemonDatas[]>([]);
 
   useEffect(() => {
     dispatch(getPokemonResponseApi() as unknown as AnyAction);

@@ -16,7 +16,7 @@ export type GetApiRequest = {
   user_id: string;
 };
 
-export type PokemonData = {
+export type PokemonDatas = {
   name: string;
   url: string;
 };
@@ -25,7 +25,7 @@ export type GetPokemonApiResponse = {
   count: number;
   next: string;
   previous: null | string;
-  results: PokemonData[];
+  results: PokemonDatas[];
 };
 
 ///////////////////////////////////
